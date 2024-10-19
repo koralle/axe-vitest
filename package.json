@@ -25,5 +25,8 @@
   },
   "files": [],
   "type": "module",
-  "scripts": {}
+  "scripts": {},
+  "dependencies": {
+    "@vitest/pretty-format": "^2.1.3"
+  }
 }
