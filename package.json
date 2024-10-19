@@ -31,8 +31,5 @@
   },
   "files": [],
   "type": "module",
-  "scripts": {},
-  "dependencies": {},
-  "devDependencies": {},
-  "peerDependencies": {}
+  "scripts": {}
 }
