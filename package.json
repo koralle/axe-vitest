@@ -25,7 +25,10 @@
   },
   "files": [],
   "type": "module",
-  "scripts": {},
+  "scripts": {
+    "postinstall": "pnpm run setup-playwright",
+    "setup-playwright": "pnpm dlx playwright install --with-deps chromium"
+  },
   "dependencies": {
     "@vitest/pretty-format": "^2.1.3",
     "axe-core": "^4.10.1"
