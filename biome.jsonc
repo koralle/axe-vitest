@@ -1,0 +1,67 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "files": {
+    "include": [
+      "src/**/*.ts",
+      "scripts/**/*.ts",
+      "tests/**/*.ts",
+      "biome.jsonc",
+      "tsconfig.*.json",
+      "vitest.config.ts",
+      "vitest.workspace.ts"
+    ]
+  },
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "defaultBranch": "main",
+    "useIgnoreFile": true
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true
+    }
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "lineEnding": "lf",
+    "lineWidth": 140,
+    "indentWidth": 2,
+    "useEditorconfig": true,
+    "attributePosition": "multiline",
+    "formatWithErrors": false,
+    "bracketSpacing": true
+  },
+  "organizeImports": {
+    "enabled": true
+  },
+  "javascript": {
+    "formatter": {
+      "enabled": true,
+      "arrowParentheses": "always",
+      "attributePosition": "multiline",
+      "bracketSameLine": true,
+      "bracketSpacing": true,
+      "jsxQuoteStyle": "single",
+      "quoteProperties": "preserve",
+      "semicolons": "asNeeded",
+      "trailingCommas": "none",
+      "quoteStyle": "single"
+    }
+  },
+  "json": {
+    "formatter": {
+      "enabled": true,
+      "trailingCommas": "none"
+    },
+    "linter": {
+      "enabled": true
+    },
+    "parser": {
+      "allowComments": true,
+      "allowTrailingCommas": false
+    }
+  }
+}
