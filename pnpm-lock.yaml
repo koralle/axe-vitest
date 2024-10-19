@@ -27,6 +27,9 @@ importers:
       '@vitest/browser':
         specifier: ^2.1.3
         version: 2.1.3(@vitest/spy@2.1.3)(playwright@1.48.1)(typescript@5.6.3)(vite@5.4.9(@types/node@22.7.7))(vitest@2.1.3)
+      '@vitest/ui':
+        specifier: ^2.1.3
+        version: 2.1.3(vitest@2.1.3)
       playwright:
         specifier: ^1.48.1
         version: 1.48.1
@@ -35,7 +38,7 @@ importers:
         version: 5.6.3
       vitest:
         specifier: ^2.1.3
-        version: 2.1.3(@types/node@22.7.7)(@vitest/browser@2.1.3)(msw@2.4.11(typescript@5.6.3))
+        version: 2.1.3(@types/node@22.7.7)(@vitest/browser@2.1.3)(@vitest/ui@2.1.3)(msw@2.4.11(typescript@5.6.3))
 
 packages:
 
@@ -453,6 +456,11 @@ packages:
   '@vitest/spy@2.1.3':
     resolution: {integrity: sha512-Nb2UzbcUswzeSP7JksMDaqsI43Sj5+Kry6ry6jQJT4b5gAK+NS9NED6mDb8FlMRCX8m5guaHCDZmqYMMWRy5nQ==}
 
+  '@vitest/ui@2.1.3':
+    resolution: {integrity: sha512-2XwTrHVJw3t9NYES26LQUYy51ZB8W4bRPgqUH2Eyda3kIuOlYw1ZdPNU22qcVlUVx4WKgECFQOSXuopsczuVjQ==}
+    peerDependencies:
+      vitest: 2.1.3
+
   '@vitest/utils@2.1.3':
     resolution: {integrity: sha512-xpiVfDSg1RrYT0tX6czgerkpcKFmFOF/gCr30+Mve5V2kewCy4Prn1/NDMSRwaSmT7PRaOF83wu+bEtsY1wrvA==}
 
@@ -571,6 +579,20 @@ packages:
   estree-walker@3.0.3:
     resolution: {integrity: sha512-7RUKfXgSMMkzt6ZuXmqapOurLGPPfgj6l9uRZ7lRGolvk0y2yocc35LdcxKC5PQZdn2DMqioAQ2NoWcrTKmm6g==}
 
+  fdir@6.4.2:
+    resolution: {integrity: sha512-KnhMXsKSPZlAhp7+IjUkRZKPb4fUyccpDrdFXbi4QL1qkmFh9kVY09Yox+n4MaOb3lHZ1Tv829C3oaaXoMYPDQ==}
+    peerDependencies:
+      picomatch: ^3 || ^4
+    peerDependenciesMeta:
+      picomatch:
+        optional: true
+
+  fflate@0.8.2:
+    resolution: {integrity: sha512-cPJU47OaAoCbg0pBvzsgpTPhmhqI5eJjh/JIu8tPj5q+T7iLvW/JAYUqmE7KOB4R1ZyEhzBaIQpQpardBF5z8A==}
+
+  flatted@3.3.1:
+    resolution: {integrity: sha512-X8cqMLLie7KsNUDSdzeN8FYK9rEt4Dt67OsG/DNGnYTSDBG4uFAJFBnUeiV+zCVAvwFy56IjM9sH51jVaEhNxw==}
+
   fsevents@2.3.2:
     resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
@@ -661,6 +683,10 @@ packages:
 
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
+
+  picomatch@4.0.2:
+    resolution: {integrity: sha512-M7BAV6Rlcy5u+m6oPhAPFgJTzAioX/6B0DxyvDlo9l8+T3nLKbrczg2WLUyzd45L8RqfUMyGPzekbMvX2Ldkwg==}
+    engines: {node: '>=12'}
 
   playwright-core@1.48.1:
     resolution: {integrity: sha512-Yw/t4VAFX/bBr1OzwCuOMZkY1Cnb4z/doAFSwf4huqAGWmf9eMNjmK7NiOljCdLmxeRYcGPPmcDgU0zOlzP0YA==}
@@ -757,6 +783,10 @@ packages:
 
   tinyexec@0.3.1:
     resolution: {integrity: sha512-WiCJLEECkO18gwqIp6+hJg0//p23HXp4S+gGtAKu3mI2F2/sXC4FvHvXvB0zJVVaTPhx1/tOwdbRsa1sOBIKqQ==}
+
+  tinyglobby@0.2.9:
+    resolution: {integrity: sha512-8or1+BGEdk1Zkkw2ii16qSS7uVrQJPre5A9o/XkWPATkk23FZh/15BKFxPnlTy6vkljZxLqYCzzBMj30ZrSvjw==}
+    engines: {node: '>=12.0.0'}
 
   tinypool@1.0.1:
     resolution: {integrity: sha512-URZYihUbRPcGv95En+sz6MfghfIc2OJ1sv/RmhWZLouPY0/8Vo80viwPvg3dlaS9fuq7fQMEfgRRK7BBZThBEA==}
@@ -1187,7 +1217,7 @@ snapshots:
       msw: 2.4.11(typescript@5.6.3)
       sirv: 2.0.4
       tinyrainbow: 1.2.0
-      vitest: 2.1.3(@types/node@22.7.7)(@vitest/browser@2.1.3)(msw@2.4.11(typescript@5.6.3))
+      vitest: 2.1.3(@types/node@22.7.7)(@vitest/browser@2.1.3)(@vitest/ui@2.1.3)(msw@2.4.11(typescript@5.6.3))
       ws: 8.18.0
     optionalDependencies:
       playwright: 1.48.1
@@ -1232,6 +1262,17 @@ snapshots:
   '@vitest/spy@2.1.3':
     dependencies:
       tinyspy: 3.0.2
+
+  '@vitest/ui@2.1.3(vitest@2.1.3)':
+    dependencies:
+      '@vitest/utils': 2.1.3
+      fflate: 0.8.2
+      flatted: 3.3.1
+      pathe: 1.1.2
+      sirv: 2.0.4
+      tinyglobby: 0.2.9
+      tinyrainbow: 1.2.0
+      vitest: 2.1.3(@types/node@22.7.7)(@vitest/browser@2.1.3)(@vitest/ui@2.1.3)(msw@2.4.11(typescript@5.6.3))
 
   '@vitest/utils@2.1.3':
     dependencies:
@@ -1354,6 +1395,14 @@ snapshots:
     dependencies:
       '@types/estree': 1.0.6
 
+  fdir@6.4.2(picomatch@4.0.2):
+    optionalDependencies:
+      picomatch: 4.0.2
+
+  fflate@0.8.2: {}
+
+  flatted@3.3.1: {}
+
   fsevents@2.3.2:
     optional: true
 
@@ -1423,6 +1472,8 @@ snapshots:
   pathval@2.0.0: {}
 
   picocolors@1.1.1: {}
+
+  picomatch@4.0.2: {}
 
   playwright-core@1.48.1: {}
 
@@ -1522,6 +1573,11 @@ snapshots:
 
   tinyexec@0.3.1: {}
 
+  tinyglobby@0.2.9:
+    dependencies:
+      fdir: 6.4.2(picomatch@4.0.2)
+      picomatch: 4.0.2
+
   tinypool@1.0.1: {}
 
   tinyrainbow@1.2.0: {}
@@ -1578,7 +1634,7 @@ snapshots:
       '@types/node': 22.7.7
       fsevents: 2.3.3
 
-  vitest@2.1.3(@types/node@22.7.7)(@vitest/browser@2.1.3)(msw@2.4.11(typescript@5.6.3)):
+  vitest@2.1.3(@types/node@22.7.7)(@vitest/browser@2.1.3)(@vitest/ui@2.1.3)(msw@2.4.11(typescript@5.6.3)):
     dependencies:
       '@vitest/expect': 2.1.3
       '@vitest/mocker': 2.1.3(@vitest/spy@2.1.3)(msw@2.4.11(typescript@5.6.3))(vite@5.4.9(@types/node@22.7.7))
@@ -1602,6 +1658,7 @@ snapshots:
     optionalDependencies:
       '@types/node': 22.7.7
       '@vitest/browser': 2.1.3(@vitest/spy@2.1.3)(playwright@1.48.1)(typescript@5.6.3)(vite@5.4.9(@types/node@22.7.7))(vitest@2.1.3)
+      '@vitest/ui': 2.1.3(vitest@2.1.3)
     transitivePeerDependencies:
       - less
       - lightningcss
