@@ -21,6 +21,9 @@ importers:
       '@biomejs/biome':
         specifier: ^1.9.4
         version: 1.9.4
+      '@testing-library/dom':
+        specifier: ^10.4.0
+        version: 10.4.0
       '@testing-library/jest-dom':
         specifier: ^6.6.2
         version: 6.6.2
