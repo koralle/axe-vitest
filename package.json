@@ -1,0 +1,29 @@
+{
+  "name": "@koralle/axe-vitest",
+  "version": "0.1.0",
+  "engines": {
+    "node": "20",
+    "pnpm": ">=9",
+    "npm": "please use pnpm!",
+    "yarn": "please use pnpm!"
+  },
+  "packageManager": "pnpm@9.12.2+sha512.22721b3a11f81661ae1ec68ce1a7b879425a1ca5b991c975b074ac220b187ce56c708fe5db69f4c962c989452eee76c82877f4ee80f474cebd61ee13461b6228",
+  "description": "Provides custom matchers for performing accessibility tests using aXe with Vitest. Inspired by chaance/vitest-axe.",
+  "keywords": ["vitest", "testing", "accessibility", "a11y", "axe"],
+  "author": "koralle",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/koralle/axe-vitest.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://github.com/koralle/axe-vitest#readme",
+  "bugs": {
+    "url": "https://github.com/koralle/axe-vitest/issues"
+  },
+  "files": [],
+  "type": "module",
+  "scripts": {}
+}
