@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "incremental": true,
+    "tsBuildInfoFile": "./node_modules/.cache/test.tsbuildinfo",
+    "types": ["vitest/globals", "@vitest/browser/providers/playwright"]
+  },
+  "include": ["src/**/*.ts", "tests/**/*.test.ts", "vitest.config.ts", "vitest.workspace.ts", "scripts/setup-test.ts"]
+}
