@@ -1,0 +1,14 @@
+import chalk from 'chalk'
+
+const HORIZONTAL_LINE = '\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500'
+const LINE_BREAK = '\n\n'
+const MIDDLE_DOT = '\u{00B7}'
+const SPACE_SYMBOL = MIDDLE_DOT
+
+const EXPECTED_COLOR = chalk.green
+const RECEIVED_COLOR = chalk.red
+const DIM_COLOR = chalk.dim
+
+const MAX_RESULT_LENGTH = 10000
+
+export { HORIZONTAL_LINE, LINE_BREAK, MIDDLE_DOT, SPACE_SYMBOL, EXPECTED_COLOR, RECEIVED_COLOR, DIM_COLOR, MAX_RESULT_LENGTH }
