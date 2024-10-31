@@ -60,6 +60,9 @@ importers:
       playwright:
         specifier: ^1.48.1
         version: 1.48.1
+      pretty-ansi:
+        specifier: ^2.0.0
+        version: 2.0.0
       typescript:
         specifier: ^5.6.3
         version: 5.6.3
@@ -997,6 +1000,10 @@ packages:
   postcss@8.4.47:
     resolution: {integrity: sha512-56rxCq7G/XfB4EkXq9Egn5GCqugWvDFjafDOThIdMBsI15iqPqR5r15TfSr1YPYeEI19YeaXMCbY6u88Y76GLQ==}
     engines: {node: ^10 || ^12 || >=14}
+
+  pretty-ansi@2.0.0:
+    resolution: {integrity: sha512-AN74nXfCper9y7CuktdWuJT5zwqVfST0LOBZMbEsDKIZ/QulzecDqDF4j+lQbzdKHKbAQU7UyqUVJBocisVjNw==}
+    engines: {node: '>=16'}
 
   pretty-format@27.5.1:
     resolution: {integrity: sha512-Qb1gy5OrP5+zDf2Bvnzdl3jsTf1qXVMazbvCoKhtKqVs4/YK4ozX4gKQJJVyNe+cajNPn0KoC0MC3FUmaHWEmQ==}
@@ -2188,6 +2195,8 @@ snapshots:
       nanoid: 3.3.7
       picocolors: 1.1.1
       source-map-js: 1.2.1
+
+  pretty-ansi@2.0.0: {}
 
   pretty-format@27.5.1:
     dependencies:
